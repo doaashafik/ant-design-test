@@ -9,8 +9,8 @@ export default function Routes() {
     <Router history={browserHistory}>
       <Suspense fallback={<Loading />}>
         <Switch>
-          <PrivateRoute exact path="/login" component={Login} />
-          <PrivateRoute exact path="/" component={Home} />
+        <PrivateRoute exact path="/" component={Home} />
+          <Route exact path="/login" component={Login} />
         </Switch>
       </Suspense>
     </Router>
