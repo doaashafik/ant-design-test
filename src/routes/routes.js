@@ -10,7 +10,7 @@ export default function Routes() {
       <Suspense fallback={<Loading />}>
         <Switch>
           <PrivateRoute exact path="/login" component={Login} />
-          <PrivateRoute exact path="/home" component={Home} />
+          <PrivateRoute exact path="/" component={Home} />
         </Switch>
       </Suspense>
     </Router>

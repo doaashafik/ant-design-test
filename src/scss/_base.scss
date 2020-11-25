@@ -3,12 +3,9 @@
 /**
  GLOBAL_CLASSES
 **/
+body, #root {
+  height: 100%;
+}
 .text-center {
   text-align: center;
-}
-.d-flex {
-  display: flex;
-}
-.mt-2 {
-  margin-top: 15px;
 }

@@ -1,6 +1,6 @@
 {
-  "homepage": "http://doaashafik.github.io/Book-Render",
-  "name": "book-finder",
+  "homepage": "http://doaashafik.github.io/login-app",
+  "name": "login-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
