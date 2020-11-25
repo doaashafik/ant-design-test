@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.scss";
 import Routes from "../routes/routes";
-import Template from "../components/template/Template";
+import Template from "../components/Template/Template";
 function App() {
   return (
-    <Template>
-      <Routes />
-    </Template>
+      <Routes>
+        <Template />
+      </Routes>
   );
 }
 

@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
-import { bookReducer } from './Book/reducer';
+import { authReducer } from './Login/reducer';
 import { loadingReducer } from './Loading/reducer'
 export default combineReducers({
-    books: bookReducer,
+    auth: authReducer,
     isLoading: loadingReducer
 })
