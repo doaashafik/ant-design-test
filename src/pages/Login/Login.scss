@@ -1,0 +1,36 @@
+.login-container {
+    &,
+    .ant-row,
+    .ant-col {
+        height: 100%;
+    }
+  .login-container-col {
+    box-shadow: 1px 1px 10px 1px #ccc;
+    padding: 0;
+    margin: 50px;
+    height: 400px;
+  }
+  .usr-icon {
+    font-size: 40px;
+    margin: 40px auto 20px auto;
+    display: block;
+  }
+  form {
+      padding: 30px;
+  }
+}
+@media(min-width: 667px) {
+    .login-image {
+        width: 100%;
+        background-image: url('../../assets/images/login-aside.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        background-position: top;
+      }
+}
+@media(max-width: 667px) {
+    .login-image-col {
+        display: none;
+    }
+}

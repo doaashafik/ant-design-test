@@ -4,7 +4,8 @@ import { UserOutlined, VideoCameraOutlined, BehanceSquareOutlined } from "@ant-d
 import './SideBar.scss'
 export const SideBar = ({ collapsed }) => {
     return (
-      <Layout.Sider theme ="light" trigger={null} collapsible collapsed={collapsed}>
+      <Layout.Sider theme ="light" breakpoint="md"
+      collapsedWidth="0" trigger={null} collapsible collapsed={collapsed}>
         <BehanceSquareOutlined className="logo"/>
         <Menu mode="inline" defaultSelectedKeys={["1"]}>
           <Menu.Item key="1" icon={<UserOutlined />}>

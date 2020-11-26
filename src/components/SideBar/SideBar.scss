@@ -1,6 +1,13 @@
 .logo {
-    margin: 20px auto;
-    font-size: 40px;
-    color: #08c;
-    display: block;
+  margin: 20px auto;
+  font-size: 40px;
+  color: #08c;
+  display: block;
+}
+@media (max-width: 400px) {
+  .ant-layout.ant-layout-has-sider > .ant-layout,
+  .ant-layout.ant-layout-has-sider > .ant-layout-content {
+    overflow-x: visible;
+    width: 100%;
+  }
 }
