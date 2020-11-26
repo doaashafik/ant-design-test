@@ -7,12 +7,27 @@ export const Input = (props) => {
   return (
     <Fragment>
       <Field>
-        {({ value, name }) => (
-          <InputAntd  addonBefore={label} value={value} name={name} {...props}/>
-          
-        )}
+        {({ field, form }) => {
+          const { value } = field;
+          const settings = {
+            ...field,
+            ...props,
+            value: value[name],
+            addonBefore: label,
+          };
+          return (
+            <Fragment>
+              <InputAntd {...settings} />
+              <ErrorMessage
+                name={name}
+                {...form.errors[name]}
+                component="div"
+                className="error-message"
+              />
+            </Fragment>
+          );
+        }}
       </Field>
-      <ErrorMessage name={name} className="error-message" />
     </Fragment>
   );
 };

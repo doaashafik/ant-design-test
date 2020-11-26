@@ -10,10 +10,9 @@ export const LoginForm = () => {
         email: "",
         password: "",
       }}
-      schemaValidation={schema}
+      validationSchema={schema}
     >
       {(formik) => {
-        console.log(formik.errors)
         return (
           <Form>
             <FormControl
